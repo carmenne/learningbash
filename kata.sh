@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Get the input argument and store it, toghether with the length
-var=$(echo $1 | grep -oi . | sort -i | uniq -i)
+var=$(echo $1 | grep -oi . | sort -f | uniq -i)
 echo $var
 # Initialize the counter that will kep track of chars that
 # appear multiple times
