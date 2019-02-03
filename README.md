@@ -23,3 +23,13 @@ nano !$
 `echo Hello echo` - copies its arguments to the screen  
 `date` - displays date  
 `touch README.md` - creates an empty file  
+  
+### Commands to display info/help  
+`man ls` - displays the first occurence about the ls command. It also informs
+about the section where it was fist found  
+`man 5 crontab` - displays the occurence from the 5th section  
+`man -a crontab` - displays all occurences  
+`apropos who` - searches for commands that contains word who  
+`whatis who` - similar to apropos but returns only exact matches  
+`info`  
+`pinfo`  
