@@ -75,3 +75,18 @@ comand [arguments] > filename
 comand [arguments] < filename
 ```
 
+#### /dev/null
+/dev/null device is a data sink, commonly referred to as a bit bucket.  
+You can redirect ouput you do not want to see to /dev/null  
+``` bash
+echo 'Hi there' > /dev/null # displays nothing
+```
+
+Reading from /dev/null, yields a null string.  
+You can truncate a file with the following command  
+``` bash
+cat /dev/null > messages
+```
+
+
+
