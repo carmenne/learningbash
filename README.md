@@ -41,8 +41,34 @@ command [-option1option2..optionn] [arg1] [arg2]..[argn]RETURN
 ```
 
 #### Placing a variable in the environment of a child
+``` bash
 [name=value] command line
+```
+``` bash
+cat echo_ee
+# echo "The value of the ee variable is: $ee" 
+chmod +x .\echo_ee
+ee=90
+echo $ee
+90 #parent scope
+ee=80 .\echo_ee
+# The value of the ee variable is: 80 #child scope
 
+```
+
+#### Executing a command
+If the shell finds an executable file with the filename specified by the command (it searches using the PATH variable),
+it will start a **new process** that wil execute the command.  
+The shell passes the options and arguments to the program and then enters a sleep state.  
+When the program finishes, the shell wakes up and prompts the exit status of the program.  
+
+### Redirection
+Redirection means replacing standard input/standard output with files and/or utilities.
+
+#### Redirecting standard output
+```bash
+comand [arguments] > filename
+```
 
 
 
