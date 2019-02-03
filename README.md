@@ -108,7 +108,7 @@ More precisely:
 where:
 - `time` is an optional command that displays system resouces;
 - `!` logically negates the exit status returned by the pipeline. The exit status of the pipeline is the exit status of
-the last command, unless `**pipefail**` is specified, in which case is the exit status of the rightmost failing command
+the last command, unless `pipefail` is specified, in which case is the exit status of the rightmost failing command
 - `|&` is a shorthand for `2>&1`, which sends both standard ouput and standard error of command 1 to the standard
 input of command2
 
