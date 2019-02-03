@@ -56,6 +56,11 @@ ee=80 .\echo_ee
 
 ```
 
+#### Executing a command
+If the shell finds an executable file with the filename specified by the command (it searches using the PATH variable),
+it will start a **new process** that wil execute the command.  
+The shell passes the options and arguments to the program and then enters a sleep state.  
+When the program finishes, the shell wakes up and prompts the exit status of the program.  
 
 
 
