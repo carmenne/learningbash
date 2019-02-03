@@ -41,7 +41,18 @@ command [-option1option2..optionn] [arg1] [arg2]..[argn]RETURN
 ```
 
 #### Placing a variable in the environment of a child
+``` bash
 [name=value] command line
+```
+``` bash
+cat echo_ee
+# echo "The value of the ee variable is: $ee" 
+chmod +x .\echo_ee
+ee=80 .\echo_ee
+# The value of the ee variable is: 80
+echo $ee
+   # ee is empty in the parent scope
+```
 
 
 
