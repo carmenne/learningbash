@@ -6,4 +6,5 @@ cat tape
 cat pens
 # put everything together
 cat stationery tape pens > supply_orders
-# supply_orders contains all the content displayed above[A[A[B
+cat supply_orders
+# supply_orders contains all the content displayed above
