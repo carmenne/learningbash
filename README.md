@@ -33,3 +33,16 @@ about the section where it was fist found
 `whatis who` - similar to apropos but returns only exact matches  
 `info`  
 `pinfo`  
+
+### Simple commands  
+#### Syntax
+``` bash
+command [-option1option2..optionn] [arg1] [arg2]..[argn]RETURN
+```
+
+#### Placing a variable in the environment of a child
+[name=value] command line
+
+
+
+
