@@ -70,5 +70,8 @@ Redirection means replacing standard input/standard output with files and/or uti
 comand [arguments] > filename
 ```
 
-
+#### Redirecting standard input
+```bash
+comand [arguments] < filename
+```
 
