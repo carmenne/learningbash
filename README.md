@@ -48,10 +48,12 @@ command [-option1option2..optionn] [arg1] [arg2]..[argn]RETURN
 cat echo_ee
 # echo "The value of the ee variable is: $ee" 
 chmod +x .\echo_ee
-ee=80 .\echo_ee
-# The value of the ee variable is: 80
+ee=90
 echo $ee
-   # ee is empty in the parent scope
+90 #parent scope
+ee=80 .\echo_ee
+# The value of the ee variable is: 80 #child scope
+
 ```
 
 
