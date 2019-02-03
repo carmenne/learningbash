@@ -62,5 +62,13 @@ it will start a **new process** that wil execute the command.
 The shell passes the options and arguments to the program and then enters a sleep state.  
 When the program finishes, the shell wakes up and prompts the exit status of the program.  
 
+### Redirection
+Redirection means replacing standard input/standard output with files and/or utilities.
+
+#### Redirecting standard output
+```bash
+comand [arguments] > filename
+```
+
 
 
