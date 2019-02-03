@@ -88,5 +88,29 @@ You can truncate a file with the following command
 cat /dev/null > messages
 ```
 
+#### Pipeline
+A pipeline redirected the standard ouput from a previous command to the standard input of a subsequent commands (after the '|' pipe operator)
+
+```bash
+command_a [arguments] | commands_b [arguments]
+```
+An equivalent with redirection (except for the fact that pipleline does not create temp files):
+```bash
+command_a [arguments] > temp
+command_b [arguments] < temp
+rm temp
+```
+
+More precisely:
+```bash
+[time][!]command1[|||&command2...]
+```
+where:
+- time is an optional command that displays system resouces;
+- ! logically negates the exit status returned by the pipeline. The exit status of the pipeline is the exit status of
+the last command, unless **pipefail** is specified, in which case is the exit status of the rightmost failing command
+- |& is a shorthand for 2>&1, which sends both standard ouput and standard error of command 1 to the standard
+input of command2
+
 
 
