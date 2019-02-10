@@ -1,3 +1,5 @@
+### Dislay output in a terminal
+#### 'Echo and printf' (try_echo.sh)
 I learned how to print in the terminal using `echo` and `printf`.
 I also learned the difference between no quotes, 
 double quotes nd single quotes.
