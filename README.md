@@ -117,12 +117,21 @@ input of command2
 A list is one or more pipelines, each separated from the next by one
 of the control operators: `;, &, && or ||`.
 
-#### Background jobs
+#### Background jobs  
 `&;` - just before RETURN at the end of command, puts the job in 
-background
-`CTRL-Z and bg` - suspends the job and restarts it in the backgound
-`fg` - moves a background job to foreground
-`ps` - process status, displays status of processed (also PID)
-`kill PID` - kills the process with the given PID (process ID)
-`jobs` - retrieves the jobs
-`kill %job_number` - kills a process by job number
+background  
+`CTRL-Z and bg` - suspends the job and restarts it in the backgound  
+`fg` - moves a background job to foreground  
+`ps` - process status, displays status of processed (also PID)  
+`kill PID` - kills the process with the given PID (process ID)  
+`jobs` - retrieves the jobs  
+`kill %job_number` - kills a process by job number  
+
+### Linux filesystem
+#### Case sensitivity
+Linux is case sensitive, so files JANUARY, January and january  
+represents three different files.  
+#### Spaces
+Do not use space in a filenamse because ot needs to be escaped.  
+#### Commands
+`mkdir -p` - use -p(parent) option to create a hierarchy of directories  
